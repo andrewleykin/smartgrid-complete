@@ -1,0 +1,40 @@
+body {
+  background: #000;
+}
+
+body .content {
+  background: red;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+@media screen and (max-width: 960px) {
+  .content {
+    justify-content: center;
+  }
+}
+
+.content .block {
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: calc(25% - 20px);
+}
+
+@media screen and (max-width: 960px) {
+  .content .block {
+    width: calc(41.66667% - 20px);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .content .block {
+    width: calc(83.33333% - 20px);
+  }
+}
